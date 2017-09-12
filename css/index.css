@@ -1,0 +1,186 @@
+@CHARSET "UTF-8";
+
+/********************************************************************************************************* */
+/********************************************** HEADER *************************************************** */
+/********************************************************************************************************* */
+.nav-pills>li>a {
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nav-pills>li>a:hover {
+    background: none;
+}
+
+#header .social a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#header .social a>span {
+    background: #b0b7bf;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    color: #fff;
+    text-align: center;
+}
+
+#header .social .dropdown {
+    margin-top: 7px;
+}
+
+#header .social a.android-icon>span:hover {
+    background: #2a7526;
+}
+
+#header .social a.github-icon>span:hover {
+    background: #000000;
+}
+
+#header .social a .fa {
+    font-size: 22px;
+    padding-top: 7px;
+}
+
+/********************************************************************************************************* */
+/******************************************** HOMEPAGE *************************************************** */
+/********************************************************************************************************* */
+.main h1, .main h3 {
+    text-align: center;
+}
+
+/********************************************************************************************************* */
+/********************************************** APPS ***************************************************** */
+/********************************************************************************************************* */
+.container {
+    padding-bottom: 100px;
+}
+
+.promo {
+    background-color: #56bc94;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.has-pattern {
+    background-image: url(../img/pattern-1.png);
+    background-repeat: repeat;
+    background-position: left top;
+}
+
+.promo .overview h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.promo .overview .summary {
+    margin-bottom: 60px;
+    margin-left: 70px;
+}
+
+.promo .overview .download-area {
+    display: inline-block;
+}
+
+.promo .overview .btn-group li {
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.promo .overview .summary li {
+    margin-bottom: 15px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 30px;
+    background: url(../img/bullet.png) no-repeat left center;
+}
+
+.android-btn a, .ios-btn a {
+    background-repeat: no-repeat;
+    width: 252px;
+    display: block;
+    background-size: 250px;
+    height: 100px;
+    max-width: 300px;
+    text-indent: -9999px;
+    margin: 0 auto;
+}
+
+.phone.android {
+    background: url(../img/phone_1x.png) no-repeat;
+    background-size: 60%;
+    position: relative;
+    height: 490px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.phone .android-inner {
+    position: absolute;
+    width: 222px;
+    height: 394px;
+    left: 78px;
+    top: 51px;
+}
+
+.phone.android img {
+    height: 378px;
+    width: 215px;
+    display: block;
+    margin-left: 9px;
+}
+
+/********************************************************************************************************* */
+/********************************************** FOOTER *************************************************** */
+/********************************************************************************************************* */
+.footer {
+    background: #f8f8f8;
+    color: #99979c;
+    float: left;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-links li {
+    list-style-type: none;
+    text-align: left;
+}
+
+.footer-links li>ul {
+    padding: 10px;
+}
+
+.footer-links>li>a {
+    font-weight: bold;
+    color: #000000;
+}
+
+@media only screen and (max-width: 768px) {
+    .promo .overview h2 {
+        margin-bottom: 15px;
+    }
+    .promo .overview .summary {
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+}

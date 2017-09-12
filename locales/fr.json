@@ -1,0 +1,16 @@
+{
+	"values": {
+		"locales": "Langues",
+		"homepage": "Homepage",
+		"intro": "Créer des applications est notre métier",
+		"sortinghat": "Le choixpeau magique",
+		"links": "Liens",
+		"playstore": "Notre page développeur android",
+		"sortingintro": "Choixpeau magique &amp; patronus",
+		"sorting1": "Le test du choixpeau de Poudlard vous dira à quelle maison vous appartenez",
+		"sorting2": "Le test du patronus",
+		"sorting3": "Le test d'Ilvermorny",
+		"sorting4": "Le test de la baguette magique",
+		"playbadge": "img/fr_badge_web_generic.png"
+	}
+}

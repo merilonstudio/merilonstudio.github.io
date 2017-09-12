@@ -1,0 +1,17 @@
+{
+	"values": {
+		"locales": "Locales",
+		"homepage": "Homepage",
+		"ourapps": "Our apps",
+		"intro": "Building mobile apps is what we do",
+		"sortinghat": "The Sorting Hat",
+		"links": "Links",
+		"playstore": "Our android developer page",
+		"sortingintro": "The Sorting Hat &amp; Patronus Quiz",
+		"sorting1": "Hogwarts Sorting Hat Quiz will tell you which house you belong to",
+		"sorting2": "The patronus animal quiz",
+		"sorting3": "Ilvermorny quiz",
+		"sorting4": "Magic wand quiz",
+		"playbadge": "img/en_badge_web_generic.png"
+	}
+}
