@@ -2,31 +2,25 @@ var locData = null;
 var userLang = navigator.language || navigator.userLanguage;
 
 var file = "";
-var currentLocale = "";
 
 if (typeof (Storage) !== "undefined"
-        && localStorage.getItem("currentLocale") !== "") {
-    localStorage.getItem("currentLocale")
-
-    currentLocale = localStorage.getItem("currentLocale");
-    userLang = localStorage.getItem("currentLocale");
+        && localStorage.getItem("currentLocale") !== null
+        && localStorage.getItem("currentLocaleDate") !== null) {
+    if (isExpired(new Date(localStorage.getItem("currentLocaleDate")))) {
+        localStorage.removeItem("currentLocale");
+        localStorage.removeItem("currentLocaleDate");
+        localStorage.clear();
+    } else {
+        userLang = localStorage.getItem("currentLocale");
+    }
 }
 
 if (userLang === "fr") {
     file = "locales/fr.json";
     $("html").attr("lang", "fr");
-    currentLocale = "fr";
 } else {
     file = "locales/en.json";
     $("html").attr("lang", "en");
-    currentLocale = "en";
-}
-
-if (typeof (Storage) !== "undefined") {
-    // Code for localStorage/sessionStorage.
-    localStorage.setItem("currentLocale", currentLocale);
-} else {
-    // Sorry! No Web Storage support..
 }
 
 if (file !== "") {
@@ -39,7 +33,7 @@ $(function() {
 
         $("[data-locale-text]").each(function(index) {
             var key = $(this).attr("data-locale-text").trim().toLowerCase();
-            $(this).text(locData[key]);
+            $(this).html(locData[key]);
         });
 
         $("[data-locale-title]").each(function(index) {
@@ -53,3 +47,11 @@ $(function() {
         });
     }
 });
+
+function isExpired(secondDate) {
+    var oneDay = 24 * 60 * 60 * 1000;
+    var days = Math.round(Math.abs((Date.now() - new Date(parseInt(localStorage
+            .getItem("currentLocaleDate"))).getTime())
+            / (oneDay)));
+    return days >= 30;
+}
