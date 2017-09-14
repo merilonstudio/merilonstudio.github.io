@@ -33,17 +33,23 @@ $(function() {
 
         $("[data-locale-text]").each(function(index) {
             var key = $(this).attr("data-locale-text").trim().toLowerCase();
-            $(this).html(locData[key]);
+            if (locData[key] !== "") {
+                $(this).html(locData[key]);
+            }
         });
 
         $("[data-locale-title]").each(function(index) {
             var key = $(this).attr("data-locale-title").trim().toLowerCase();
-            $(this).attr("title", locData[key]);
+            if (locData[key] !== "") {
+                $(this).attr("title", locData[key]);
+            }
         });
 
         $("[data-locale-bgimg]").each(function(index) {
             var key = $(this).attr("data-locale-bgimg").trim().toLowerCase();
-            $(this).css("background-image", "url(" + locData[key] + ")");
+            if (locData[key] !== "") {
+                $(this).css("background-image", "url(" + locData[key] + ")");
+            }
         });
     }
 });

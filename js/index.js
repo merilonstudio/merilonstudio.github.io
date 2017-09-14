@@ -10,7 +10,7 @@ $(function() {
         if (newLocale === "fr" || newLocale === "en") {
 
             if (typeof (Storage) !== "undefined") {
-                
+
                 var currentLocale = localStorage.getItem("currentLocale");
 
                 if (currentLocale !== newLocale) {
