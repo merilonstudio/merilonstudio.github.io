@@ -16,7 +16,9 @@ $(function() {
                 if (currentLocale !== newLocale) {
                     localStorage.setItem("currentLocale", newLocale);
                     localStorage.setItem("currentLocaleDate", Date.now());
-                    window.location.reload(true);
+                    setTimeout(function(){
+                        window.location.reload(true);
+                    });
                 }
             }
         }
