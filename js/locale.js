@@ -26,33 +26,34 @@ if (userLang === "fr") {
 if (file !== "") {
     $.getJSON(file, function(data) {
         locData = data.values;
+            $(function() {
+                    if (locData !== null) {
+
+                        $("[data-locale-text]").each(function(index) {
+                            var key = $(this).attr("data-locale-text").trim().toLowerCase();
+                            if (locData[key] !== "") {
+                                $(this).html(locData[key]);
+                            }
+                        });
+
+                        $("[data-locale-title]").each(function(index) {
+                            var key = $(this).attr("data-locale-title").trim().toLowerCase();
+                            if (locData[key] !== "") {
+                                $(this).attr("title", locData[key]);
+                            }
+                        });
+
+                        $("[data-locale-bgimg]").each(function(index) {
+                            var key = $(this).attr("data-locale-bgimg").trim().toLowerCase();
+                            if (locData[key] !== "") {
+                                $(this).css("background-image", "url(" + locData[key] + ")");
+                            }
+                        });
+                    }
+            });
     });
 }
-$(function() {
-    if (locData !== null) {
 
-        $("[data-locale-text]").each(function(index) {
-            var key = $(this).attr("data-locale-text").trim().toLowerCase();
-            if (locData[key] !== "") {
-                $(this).html(locData[key]);
-            }
-        });
-
-        $("[data-locale-title]").each(function(index) {
-            var key = $(this).attr("data-locale-title").trim().toLowerCase();
-            if (locData[key] !== "") {
-                $(this).attr("title", locData[key]);
-            }
-        });
-
-        $("[data-locale-bgimg]").each(function(index) {
-            var key = $(this).attr("data-locale-bgimg").trim().toLowerCase();
-            if (locData[key] !== "") {
-                $(this).css("background-image", "url(" + locData[key] + ")");
-            }
-        });
-    }
-});
 
 function isExpired(secondDate) {
     var oneDay = 24 * 60 * 60 * 1000;
