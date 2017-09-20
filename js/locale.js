@@ -23,10 +23,10 @@ if (userLang === "fr") {
     $("html").attr("lang", "en");
 }
 
-if (file !== "") {
-    $.getJSON(file, function(data) {
-        locData = data.values;
-            $(function() {
+$(function() {
+        if (file !== "") {
+            $.getJSON(file, function(data) {
+                    locData = data.values;
                     if (locData !== null) {
 
                         $("[data-locale-text]").each(function(index) {
@@ -51,8 +51,8 @@ if (file !== "") {
                         });
                     }
             });
-    });
-}
+        }
+});
 
 
 function isExpired(secondDate) {
