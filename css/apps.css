@@ -1,0 +1,101 @@
+@CHARSET "UTF-8";
+
+/********************************************************************************************************* */
+/********************************************** APPS ***************************************************** */
+/********************************************************************************************************* */
+.promo .overview h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.promo .overview .summary {
+    margin-bottom: 60px;
+    margin-left: 70px;
+}
+
+.promo .overview .download-area {
+    display: inline-block;
+}
+
+.promo .overview .btn-group li {
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.promo .overview .summary li {
+    margin-bottom: 15px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 30px;
+    background: url(../img/bullet.png) no-repeat left center;
+}
+
+.android-btn a, .ios-btn a {
+    background-repeat: no-repeat;
+    width: 252px;
+    display: block;
+    background-size: 250px;
+    height: 100px;
+    max-width: 300px;
+    text-indent: -9999px;
+    margin: 0 auto;
+}
+
+.phone.android {
+    background: url(../img/phone_1x.png) no-repeat;
+    background-size: 60%;
+    position: relative;
+    height: 490px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.phone .android-inner {
+    position: absolute;
+    width: 215px;
+    height: 394px;
+    left: 87px;
+    top: 51px;
+}
+
+.phone.android img {
+    height: 383px;
+    width: auto;
+    display: block;
+}
+
+.custom-navigation {
+    display: table;
+    table-layout: fixed;
+}
+
+.custom-navigation>* {
+    display: table-cell;
+}
+
+.flex-control-nav {
+    position: relative;
+    bottom: auto;
+}
+
+.flex-nav-prev, .flex-nav-next {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .phone .android-inner {
+        position: absolute;
+        width: 215px;
+        height: 394px;
+        left: 89px;
+        top: 51px;
+    }
+}

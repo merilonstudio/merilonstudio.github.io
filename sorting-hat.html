@@ -8,7 +8,9 @@
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="css/flexslider.css" type="text/css">
 <link rel="stylesheet" href="css/index.css" type="text/css">
+<link rel="stylesheet" href="css/apps.css" type="text/css">
 </head>
 <body>
 
@@ -37,11 +39,11 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="https://play.google.com/store/apps/dev?id=5564318794958031946" class="android-icon" target="_blank" title="Our play store page"> <span><i
-                                    class="fa fa-android" aria-hidden="true"></i></span>
+                        <li><a href="https://play.google.com/store/apps/dev?id=5564318794958031946" class="android-icon" target="_blank"
+                            title="Our play store page"> <span><i class="fa fa-android" aria-hidden="true"></i></span>
                         </a></li>
-                        <li><a href="https://github.com/merilonstudio" class="github-icon" target="_blank" title="Our github page"> <span><i class="fa fa-github-alt"
-                                    aria-hidden="true"></i></span>
+                        <li><a href="https://github.com/merilonstudio" class="github-icon" target="_blank" title="Our github page"> <span><i
+                                    class="fa fa-github-alt" aria-hidden="true"></i></span>
                         </a></li>
                     </ul>
                 </div>
@@ -77,10 +79,19 @@
                         </div>
                     </div>
 
-                    <div class="phone android col-md-4 col-sm-12 col-xs-12 ">
+                    <div class="phone android col-md-4 col-sm-12 col-xs-12">
                         <div class="android-inner">
-                            <img src="img/sorting/screen2.png" alt="The Sorting hat screenshot" draggable="false">
+                            <div class="flexslider">
+                                <ul class="slides">
+                                    <li><img src="img/sorting/screen2.png" alt="The Sorting hat screenshot" draggable="false"></li>
+                                    <li><img src="img/sorting/screen1.png" alt="The Sorting hat screenshot" draggable="false"></li>
+                                    <li><img src="img/sorting/screen3.png" alt="The Sorting hat screenshot" draggable="false"></li>
+                                </ul>
+                            </div>
                         </div>
+                    </div>
+                    <div class="custom-navigation col-md-4 col-sm-12 col-xs-12">
+                        <div class="custom-controls-container"></div>
                     </div>
                 </div>
             </div>
@@ -114,5 +125,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/locale.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/apps.js"></script>
 </body>
 </html>
