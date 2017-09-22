@@ -98,4 +98,8 @@
         left: 89px;
         top: 51px;
     }
+    .promo .overview .summary {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
 }

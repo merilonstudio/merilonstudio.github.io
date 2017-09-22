@@ -3,19 +3,28 @@
 		"locales": "Langues",
 		"homepage": "Page d'accueil",
 		"homepagetitle": "Merilon Studio - Développeur Android",
+		"ourapps": "Nos applications",
 		"intro": "Créer des applications est notre métier",
-		"sortinghat": "Le choixpeau magique",
-		"sortingtitle": "Le choixpeau magique - Application Android",
 		"links": "Liens",
 		"playstore": "Notre page développeur android",
-		"sortingintro": "Choixpeau magique &amp; patronus basé sur les données du site officiel Pottermore",
-		"sorting1": "Le test du choixpeau de Poudlard vous dira à quelle maison vous appartenez",
-		"sorting2": "Le test du patronus",
-		"sorting3": "Le test d'Ilvermorny",
-		"sorting4": "Le test de la baguette magique",
-		"sorting5": "Utilisable hors ligne",
-		"sorting6": "Aucune donnée personnelle collectée",
-		"sorting7": "Requiert Android 4.1+",
-		"playbadge": "img/fr_badge_web_generic.png"
+		"githubpage": "Notre page github",
+		"worksoffline": "Utilisable hors ligne",
+		"personaldata": "Aucune donnée personnelle collectée",
+		"verrequired": "Requiert Android 4.1+",
+		"playbadge": "img/fr_badge_web_generic.png",
+		"sorting": {
+			"sortinghat": "Le choixpeau magique",
+			"sortingtitle": "Le choixpeau magique - Application Android",
+			"sortingintro": "Choixpeau magique &amp; patronus basé sur les données du site officiel Pottermore",
+			"sorting1": "Le test du choixpeau de Poudlard vous dira à quelle maison vous appartenez",
+			"sorting2": "Le test du patronus",
+			"sorting3": "Le test d'Ilvermorny",
+			"sorting4": "Le test de la baguette magique"
+		},
+		"compass": {
+			"compasstitle": "Une boussole simple - Application Android",
+			"compassintro": "Une boussole simple",
+			"compass1": "Une boussole simple qui donne le nord et c'est tout !"
+		}
 	}
 }

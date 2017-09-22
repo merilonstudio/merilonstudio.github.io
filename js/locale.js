@@ -24,36 +24,70 @@ if (userLang === "fr") {
 }
 
 $(function() {
-        if (file !== "") {
-            $.getJSON(file, function(data) {
-                    locData = data.values;
-                    if (locData !== null) {
+    if (file !== "") {
+        $.getJSON(file, function(data) {
+            locData = data.values;
+            if (locData !== null) {
 
-                        $("[data-locale-text]").each(function(index) {
-                            var key = $(this).attr("data-locale-text").trim().toLowerCase();
-                            if (locData[key] !== "") {
-                                $(this).html(locData[key]);
+                $("[data-locale-text]").each(
+                        function(index) {
+                            var key = $(this).attr("data-locale-text").trim()
+                                    .toLowerCase();
+                            var res = getProperty(locData, key);
+
+                            if (res !== "") {
+                                $(this).html(res);
                             }
                         });
 
-                        $("[data-locale-title]").each(function(index) {
-                            var key = $(this).attr("data-locale-title").trim().toLowerCase();
-                            if (locData[key] !== "") {
-                                $(this).attr("title", locData[key]);
+                $("[data-locale-title]").each(
+                        function(index) {
+                            var key = $(this).attr("data-locale-title").trim()
+                                    .toLowerCase();
+                            var res = getProperty(locData, key);
+                            if (res !== "") {
+                                $(this).attr("title", res);
                             }
                         });
 
-                        $("[data-locale-bgimg]").each(function(index) {
-                            var key = $(this).attr("data-locale-bgimg").trim().toLowerCase();
-                            if (locData[key] !== "") {
-                                $(this).css("background-image", "url(" + locData[key] + ")");
+                $("[data-locale-bgimg]").each(
+                        function(index) {
+                            var key = $(this).attr("data-locale-bgimg").trim()
+                                    .toLowerCase();
+                            var res = getProperty(locData, key);
+                            if (res !== "") {
+                                $(this).css("background-image",
+                                        "url(" + res + ")");
                             }
                         });
-                    }
-            });
-        }
+            }
+        });
+    }
+
 });
 
+function getProperty(obj, prop) {
+    if (prop.includes('.')) {
+        var parts = prop.split('.');
+
+        if (Array.isArray(parts)) {
+            var last = parts.pop(), l = parts.length, i = 1, current = parts[0];
+
+            while ((obj = obj[current]) && i < l) {
+                current = parts[i];
+                i++;
+            }
+
+            if (obj) {
+                return obj[last];
+            }
+        } else {
+            throw 'parts is not valid array';
+        }
+    } else {
+        return obj[prop];
+    }
+}
 
 function isExpired(secondDate) {
     var oneDay = 24 * 60 * 60 * 1000;
