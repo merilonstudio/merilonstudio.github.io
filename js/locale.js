@@ -1,4 +1,3 @@
-var locData = null;
 var userLang = navigator.language || navigator.userLanguage;
 
 var file = "";
@@ -26,7 +25,7 @@ if (userLang === "fr") {
 $(function() {
     if (file !== "") {
         $.getJSON(file, function(data) {
-            locData = data.values;
+            var locData = data.values;
             if (locData !== null) {
 
                 $("[data-locale-text]").each(
@@ -63,6 +62,29 @@ $(function() {
             }
         });
     }
+
+    $("#setEn, #setFr").click(function(e) {
+        e.preventDefault();
+
+        var newLocale = $(this).text().trim().toLowerCase();
+
+        if (newLocale === "fr" || newLocale === "en") {
+
+            if (typeof (Storage) !== "undefined") {
+
+                var currentLocale = localStorage.getItem("currentLocale");
+
+                if (currentLocale !== newLocale) {
+                    localStorage.setItem("currentLocale", newLocale);
+                    localStorage.setItem("currentLocaleDate", Date.now());
+                    setTimeout(function() {
+                        window.location.reload(true);
+                    });
+                }
+            }
+        }
+
+    });
 
 });
 

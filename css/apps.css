@@ -38,6 +38,10 @@
     background: url(../img/bullet.png) no-repeat left center;
 }
 
+.android-btn a {
+    background-image: url(../img/en_badge_web_generic.png);
+}
+
 .android-btn a, .ios-btn a {
     background-repeat: no-repeat;
     width: 252px;
@@ -51,25 +55,20 @@
 
 .phone.android {
     background: url(../img/phone_1x.png) no-repeat;
-    background-size: 60%;
+    background-size: 226px;
     position: relative;
     height: 490px;
     background-repeat: no-repeat;
     background-position: center top;
+    width: 230px;
+    margin: 0 auto;
 }
 
 .phone .android-inner {
-    position: absolute;
-    width: 215px;
-    height: 394px;
-    left: 87px;
-    top: 51px;
-}
-
-.phone.android img {
-    height: 383px;
-    width: auto;
-    display: block;
+    position: relative;
+    width: 213px;
+    left: 7px;
+    top: 49px;
 }
 
 .custom-navigation {
@@ -90,14 +89,10 @@
     display: none;
 }
 
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+}
+
 @media only screen and (max-width: 768px) {
-    .phone .android-inner {
-        position: absolute;
-        width: 215px;
-        height: 394px;
-        left: 89px;
-        top: 51px;
-    }
     .promo .overview .summary {
         margin-left: 0;
         margin-bottom: 20px;
