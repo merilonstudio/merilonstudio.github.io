@@ -25,6 +25,15 @@
 			"compasstitle": "A simple compass - Android app",
 			"compassintro": "A simple compass",
 			"compass1": "A simple compass gives you the north, and that's it !"
-		}
+		},
+		"jdg": {
+		    "jdg": "Joueur du Grenier",
+            "jdgtitle": "Joueur du Grenier - Android Application",
+            "jdgintro": "Joueur du Grenier - Videos and Twitter feed",
+            "jdg1": "Displays all his Youtube videos",
+            "jdg2": "Channels JDG and Bazar du Grenier",
+            "jdg3": "Twitter Feed",
+            "jdg4": "Rss feed <a href='joueurdugrenier.fr' target='_blank'>joueurdugrenier.fr</a>"
+        }
 	}
 }

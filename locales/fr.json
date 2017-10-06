@@ -25,6 +25,14 @@
 			"compasstitle": "Une boussole simple - Application Android",
 			"compassintro": "Une boussole simple",
 			"compass1": "Une boussole simple qui donne le nord et c'est tout !"
-		}
+		},
+		"jdg": {
+            "jdgtitle": "Joueur du Grenier - Application Android",
+            "jdgintro": "Joueur du Grenier - Toutes ses vidéos et flux Twitter",
+            "jdg1": "Récupère en temps réel toutes les vidéos Youtube",
+            "jdg2": "Chaînes JDG et Bazar du Grenier",
+            "jdg3": "Flux Twitter",
+            "jdg4": "Flux rss <a href='joueurdugrenier.fr' target='_blank'>joueurdugrenier.fr</a>"
+        }
 	}
 }
