@@ -24,6 +24,9 @@ if (userLang === "fr") {
 
 $(function() {
     if (file !== "") {
+
+        $(".locale-select a[data-locale='"+userLang+"']").prepend('<i class="fa fa-check" aria-hidden="true"></i>');
+        
         $.getJSON(file, function(data) {
             var locData = data.values;
             if (locData !== null) {
@@ -66,7 +69,7 @@ $(function() {
     $("#setEn, #setFr").click(function(e) {
         e.preventDefault();
 
-        var newLocale = $(this).text().trim().toLowerCase();
+        var newLocale = $(this).attr("data-locale").trim().toLowerCase();
 
         if (newLocale === "fr" || newLocale === "en") {
 
