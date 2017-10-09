@@ -27,12 +27,27 @@
 			"compass1": "Une boussole simple qui donne le nord et c'est tout !"
 		},
 		"jdg": {
+		    "jdg": "Joueur du Grenier",
             "jdgtitle": "Joueur du Grenier - Application Android",
             "jdgintro": "Joueur du Grenier - Toutes ses vidéos et flux Twitter",
             "jdg1": "Récupère en temps réel toutes les vidéos Youtube",
             "jdg2": "Chaînes JDG et Bazar du Grenier",
             "jdg3": "Flux Twitter",
             "jdg4": "Flux rss <a href='joueurdugrenier.fr' target='_blank'>joueurdugrenier.fr</a>"
+        },
+        "filter": {
+            "filter": "Filtre de lumière bleue",
+            "filtertitle": "Un filtre de lumière bleue - Application Android",
+            "filterintro": "Un filtre de lumière bleue pour reposer vos yeux",
+            "filter1": "Un simple filtre de lumière bleue"
+        },
+        "caps": {
+            "caps": "Mes capsules de café - Inventaire",
+            "filtertitle": "Mes capsules de café - Application Android",
+            "filterintro": "Cette application vous permet de gérer votre stock de capsules de café",
+            "filter1": "Gestion du stock de capsules",
+            "filter2": "Ajouter ou supprimer des types de capsules personnalisés",
+            "filter3": "Vous prévient de la date de rupture de stock"
         }
 	}
 }

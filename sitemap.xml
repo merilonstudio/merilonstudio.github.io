@@ -25,4 +25,16 @@
         </loc>
         <priority>0.80</priority>
     </url>
+    <url>
+        <loc>
+            https://merilonstudio.github.io/bluelightfilter.html
+        </loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://merilonstudio.github.io/mycoffeecapsules.html
+        </loc>
+        <priority>0.80</priority>
+    </url>
 </urlset>

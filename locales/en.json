@@ -34,6 +34,20 @@
             "jdg2": "Channels JDG and Bazar du Grenier",
             "jdg3": "Twitter Feed",
             "jdg4": "Rss feed <a href='joueurdugrenier.fr' target='_blank'>joueurdugrenier.fr</a>"
+        },
+        "filter": {
+            "filter": "Blue Light Filter",
+            "filtertitle": "A blue light filter - Android app",
+            "filterintro": "A blue light filter to rest your eyes",
+            "filter1": "A simple blue light filter helps you rest your eyes"
+        },
+        "caps": {
+            "caps": "My Coffee Capsules Inventory",
+            "filtertitle": "My Coffee Capsules Inventory - Android app",
+            "filterintro": "This app helps you to manage your coffee capsules inventory",
+            "filter1": "Manage your capsules inventory",
+            "filter2": "Add and remove custom type capsules",
+            "filter3": "Warns you when you are about to be out of stock"
         }
 	}
 }
