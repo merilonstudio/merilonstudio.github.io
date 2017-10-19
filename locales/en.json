@@ -12,6 +12,10 @@
 		"personaldata": "No personal data collected",
 		"verrequired": "Android 4.1+ required",
 		"playbadge": "img/en_badge_web_generic.png",
+		"tool": "Tools",
+		"entertainment" : "Entertainment",
+		"productivity" : "Productivity",
+		"rated" : "Rated",
 		"sorting": {
 			"sortinghat": "The Sorting Hat",
 			"sortingtitle": "The Sorting Hat Quiz - Android app",
@@ -27,27 +31,27 @@
 			"compass1": "A simple compass gives you the north, and that's it !"
 		},
 		"jdg": {
-		    "jdg": "Joueur du Grenier",
-            "jdgtitle": "Joueur du Grenier - Android Application",
-            "jdgintro": "Joueur du Grenier - Videos and Twitter feed",
-            "jdg1": "Displays all his Youtube videos",
-            "jdg2": "Channels JDG and Bazar du Grenier",
-            "jdg3": "Twitter Feed",
-            "jdg4": "Rss feed <a href='joueurdugrenier.fr' target='_blank'>joueurdugrenier.fr</a>"
-        },
-        "filter": {
-            "filter": "Blue Light Filter",
-            "filtertitle": "A blue light filter - Android app",
-            "filterintro": "A blue light filter to rest your eyes",
-            "filter1": "A simple blue light filter helps you rest your eyes"
-        },
-        "caps": {
-            "caps": "My Coffee Capsules Inventory",
-            "filtertitle": "My Coffee Capsules Inventory - Android app",
-            "filterintro": "This app helps you to manage your coffee capsules inventory",
-            "filter1": "Manage your capsules inventory",
-            "filter2": "Add and remove custom type capsules",
-            "filter3": "Warns you when you are about to be out of stock"
-        }
+			"jdg": "Joueur du Grenier",
+			"jdgtitle": "Joueur du Grenier - Android Application",
+			"jdgintro": "Joueur du Grenier - Videos and Twitter feed",
+			"jdg1": "Displays all his Youtube videos",
+			"jdg2": "Channels JDG and Bazar du Grenier",
+			"jdg3": "Twitter Feed",
+			"jdg4": "Rss feed <a href='joueurdugrenier.fr' target='_blank'>joueurdugrenier.fr</a>"
+		},
+		"filter": {
+			"filter": "Blue Light Filter",
+			"filtertitle": "A blue light filter - Android app",
+			"filterintro": "A blue light filter to rest your eyes",
+			"filter1": "A simple blue light filter helps you rest your eyes"
+		},
+		"caps": {
+			"caps": "My Coffee Capsules Inventory",
+			"filtertitle": "My Coffee Capsules Inventory - Android app",
+			"filterintro": "This app helps you to manage your coffee capsules inventory",
+			"filter1": "Manage your capsules inventory",
+			"filter2": "Add and remove custom type capsules",
+			"filter3": "Warns you when you are about to be out of stock"
+		}
 	}
 }
