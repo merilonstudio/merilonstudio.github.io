@@ -15,29 +15,28 @@
 </head>
 <body>
 
-
     <header w3-include-html="templates/header.html" id="header" class="header">
         
     </header>
 
-    <section>
+    <section itemtype="http://schema.org/SoftwareApplication">
         <section id="promo" class="promo section offset-header has-pattern">
             <div class="container">
                 <div class="row">
                     <div class="overview col-md-8 col-sm-8 col-xs-12">
-                        <h2 data-locale-text="filter.filterintro" class="title">Blue Light Filter - Android Application</h2>
+                        <h2 data-locale-text="filter.filterintro" class="title" itemprop="name">Blue Light Filter - Android Application</h2>
                         <ul class="summary">
-                            <li data-locale-text="filter.filter1">A simple compass gives you the north, and that's it !</li>
+                            <li data-locale-text="filter.filter1" itemprop="featureList">A simple compass gives you the north, and that's it !</li>
                             <li data-locale-text="worksoffline">Works offline</li>
                             <li data-locale-text="personaldata">No personal data collected</li>
-                            <li data-locale-text="verrequired">Android 4.1+ required</li>
+                            <li data-locale-text="verrequired" itemprop="operatingSystem">Android 4.1+ required</li>
                         </ul>
                         <div class="download-area col-xs-12">
                             <ul class="btn-group list-inline col-xs-12">
                                 <li class="ios-btn hidden col-md-6 col-xs-12"><a href="#">Download from the App Store</a></li>
                                 <li class="android-btn col-md-6 col-xs-12"><a
                                     href="https://play.google.com/store/apps/details?id=com.merilonstudio.bluelightfilter"
-                                    data-locale-bgimg="playbadge">Get it from Google Play</a></li>
+                                    data-locale-bgimg="playbadge" itemprop="installUrl">Get it from Google Play</a></li>
                             </ul>
                         </div>
                     </div>
@@ -47,9 +46,9 @@
                             <div class="android-inner">
                                 <div class="flexslider">
                                     <ul class="slides">
-                                        <li><img src="img/filter/filter-merilon-studio-screenshot1.png" alt="filter" draggable="false"></li>
-                                        <li><img src="img/filter/filter-merilon-studio-screenshot2.png" alt="filter" draggable="false"></li>
-                                        <li><img src="img/filter/filter-merilon-studio-screenshot3.png" alt="filter" draggable="false"></li>
+                                        <li><img src="img/filter/filter-merilon-studio-screenshot1.png" alt="filter" draggable="false" itemprop="screenshot"></li>
+                                        <li><img src="img/filter/filter-merilon-studio-screenshot2.png" alt="filter" draggable="false" itemprop="screenshot"></li>
+                                        <li><img src="img/filter/filter-merilon-studio-screenshot3.png" alt="filter" draggable="false" itemprop="screenshot"></li>
                                     </ul>
                                 </div>
                             </div>

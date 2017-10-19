@@ -1,5 +1,5 @@
 # Merilon Studio personal github page
-### Welcome to our Android/IOS developer website
+### Welcome to our Android developer website
 
 1. [Homepage (beta in progress)](https://merilonstudio.github.io)
 2. [The Sorting Hat page](https://merilonstudio.github.io/sorting-hat.html)
