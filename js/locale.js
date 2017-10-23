@@ -56,7 +56,9 @@ $(function() {
         });
     }
 
-    $("#setEn, #setFr").click(function(e) {
+});
+
+$("#setEn, #setFr").click(function(e) {
         e.preventDefault();
 
         var newLocale = $(this).attr("data-locale").trim().toLowerCase();
@@ -78,8 +80,6 @@ $(function() {
         }
 
     });
-
-});
 
 function getProperty(obj, prop) {
     if (prop.includes('.')) {
