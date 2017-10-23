@@ -15,7 +15,6 @@
 		"tool": "Tools",
 		"entertainment" : "Entertainment",
 		"productivity" : "Productivity",
-		"rated" : "Rated",
 		"sorting": {
 			"sortinghat": "The Sorting Hat",
 			"sortingtitle": "The Sorting Hat Quiz - Android app",
@@ -28,7 +27,7 @@
 		"compass": {
 			"compasstitle": "A simple compass - Android app",
 			"compassintro": "A simple compass",
-			"compass1": "A simple compass gives you the north, and that's it !"
+			"compass1": "A simple compass giving you the north, and that's it !"
 		},
 		"jdg": {
 			"jdg": "Joueur du Grenier",

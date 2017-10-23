@@ -1,11 +1,8 @@
 var userLang = navigator.language || navigator.userLanguage;
-
 var file = "";
 
-if (typeof (Storage) !== "undefined"
-        && localStorage.getItem("currentLocale") !== null
-        && localStorage.getItem("currentLocaleDate") !== null) {
-    if (isExpired(new Date(localStorage.getItem("currentLocaleDate")))) {
+if (typeof (Storage) !== "undefined" && localStorage.getItem("currentLocale") !== null && localStorage.getItem("currentLocaleDate") !== null) {
+    if (isExpired(localStorage.getItem("currentLocaleDate"))) {
         localStorage.removeItem("currentLocale");
         localStorage.removeItem("currentLocaleDate");
         localStorage.clear();
@@ -18,6 +15,7 @@ if (userLang === "fr") {
     file = "locales/fr.json";
     $("html").attr("lang", "fr");
 } else {
+    userLang = "en";
     file = "locales/en.json";
     $("html").attr("lang", "en");
 }
@@ -25,43 +23,36 @@ if (userLang === "fr") {
 $(function() {
     if (file !== "") {
 
-        $(".locale-select a[data-locale='"+userLang+"']").prepend('<i class="fa fa-check" aria-hidden="true"></i>');
-        
+        $(".locale-select a[data-locale='" + userLang + "']").prepend('<i class="fa fa-check" aria-hidden="true"></i>');
+
         $.getJSON(file, function(data) {
             var locData = data.values;
             if (locData !== null) {
 
-                $("[data-locale-text]").each(
-                        function(index) {
-                            var key = $(this).attr("data-locale-text").trim()
-                                    .toLowerCase();
-                            var res = getProperty(locData, key);
+                $("[data-locale-text]").each(function(index) {
+                    var key = $(this).attr("data-locale-text").trim().toLowerCase();
+                    var res = getProperty(locData, key);
 
-                            if (res !== "") {
-                                $(this).html(res);
-                            }
-                        });
+                    if (res !== "") {
+                        $(this).html(res);
+                    }
+                });
 
-                $("[data-locale-title]").each(
-                        function(index) {
-                            var key = $(this).attr("data-locale-title").trim()
-                                    .toLowerCase();
-                            var res = getProperty(locData, key);
-                            if (res !== "") {
-                                $(this).attr("title", res);
-                            }
-                        });
+                $("[data-locale-title]").each(function(index) {
+                    var key = $(this).attr("data-locale-title").trim().toLowerCase();
+                    var res = getProperty(locData, key);
+                    if (res !== "") {
+                        $(this).attr("title", res);
+                    }
+                });
 
-                $("[data-locale-bgimg]").each(
-                        function(index) {
-                            var key = $(this).attr("data-locale-bgimg").trim()
-                                    .toLowerCase();
-                            var res = getProperty(locData, key);
-                            if (res !== "") {
-                                $(this).css("background-image",
-                                        "url(" + res + ")");
-                            }
-                        });
+                $("[data-locale-bgimg]").each(function(index) {
+                    var key = $(this).attr("data-locale-bgimg").trim().toLowerCase();
+                    var res = getProperty(locData, key);
+                    if (res !== "") {
+                        $(this).css("background-image", "url(" + res + ")");
+                    }
+                });
             }
         });
     }
@@ -116,8 +107,6 @@ function getProperty(obj, prop) {
 
 function isExpired(secondDate) {
     var oneDay = 24 * 60 * 60 * 1000;
-    var days = Math.round(Math.abs((Date.now() - new Date(parseInt(localStorage
-            .getItem("currentLocaleDate"))).getTime())
-            / (oneDay)));
+    var days = Math.round(Math.abs((Date.now() - new Date(parseInt(secondDate)).getTime()) / (oneDay)));
     return days >= 30;
 }
