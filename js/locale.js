@@ -55,7 +55,7 @@ $(function() {
             }
         });
 
-        $("body").on("click", "#setEn, #setFr", function() {
+        $("body").on("click", "#setEn, #setFr", function(e) {
             e.preventDefault();
 
             var newLocale = $(this).attr("data-locale").trim().toLowerCase();
