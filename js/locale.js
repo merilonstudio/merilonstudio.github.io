@@ -22,6 +22,29 @@ if (userLang === "fr") {
 
 $(function() {
     if (file !== "") {
+        
+        $("#setEn, #setFr").click(function(e) {
+            e.preventDefault();
+
+            var newLocale = $(this).attr("data-locale").trim().toLowerCase();
+
+            if (newLocale === "fr" || newLocale === "en") {
+
+                if (typeof (Storage) !== "undefined") {
+
+                    var currentLocale = localStorage.getItem("currentLocale");
+
+                    if (currentLocale !== newLocale) {
+                        localStorage.setItem("currentLocale", newLocale);
+                        localStorage.setItem("currentLocaleDate", Date.now());
+                        setTimeout(function() {
+                            window.location.reload(true);
+                        });
+                    }
+                }
+            }
+
+        });
 
         $.getJSON(file, function(data) {
             var locData = data.values;
@@ -57,29 +80,6 @@ $(function() {
     }
 
 });
-
-$("#setEn, #setFr").click(function(e) {
-        e.preventDefault();
-
-        var newLocale = $(this).attr("data-locale").trim().toLowerCase();
-
-        if (newLocale === "fr" || newLocale === "en") {
-
-            if (typeof (Storage) !== "undefined") {
-
-                var currentLocale = localStorage.getItem("currentLocale");
-
-                if (currentLocale !== newLocale) {
-                    localStorage.setItem("currentLocale", newLocale);
-                    localStorage.setItem("currentLocaleDate", Date.now());
-                    setTimeout(function() {
-                        window.location.reload(true);
-                    });
-                }
-            }
-        }
-
-    });
 
 function getProperty(obj, prop) {
     if (prop.includes('.')) {
