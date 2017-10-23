@@ -23,11 +23,10 @@ if (userLang === "fr") {
 $(function() {
     if (file !== "") {
 
-        $(".locale-select a[data-locale='" + userLang + "']").prepend('<i class="fa fa-check" aria-hidden="true"></i>');
-
         $.getJSON(file, function(data) {
             var locData = data.values;
             if (locData !== null) {
+                $(document).find(".locale-select a[data-locale='" + userLang + "']").prepend('<i class="fa fa-check" aria-hidden="true"></i>');
 
                 $("[data-locale-text]").each(function(index) {
                     var key = $(this).attr("data-locale-text").trim().toLowerCase();
