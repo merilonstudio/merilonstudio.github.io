@@ -10,12 +10,13 @@
 		"githubpage": "Notre page Github",
 		"twitterpage": "Notre page Twitter",
 		"worksoffline": "Utilisable hors ligne",
+		"worksonline": "Nécessite une connexion Internet",
 		"personaldata": "Aucune donnée personnelle collectée",
 		"verrequired": "Requiert Android 4.1+",
 		"playbadge": "img/fr_badge_web_generic.png",
 		"tool": "Outils",
-		"entertainment" : "Divertissement",
-		"productivity" : "Productivité",
+		"entertainment": "Divertissement",
+		"productivity": "Productivité",
 		"sorting": {
 			"sortinghat": "Le choixpeau magique",
 			"sortingtitle": "Le choixpeau magique - Application Android",
@@ -47,11 +48,20 @@
 		},
 		"caps": {
 			"caps": "Mes capsules de café - Inventaire",
-			"filtertitle": "Mes capsules de café - Application Android",
-			"filterintro": "Cette application vous permet de gérer votre stock de capsules de café",
-			"filter1": "Gestion du stock de capsules",
-			"filter2": "Ajouter ou supprimer des types de capsules personnalisés",
-			"filter3": "Vous prévient de la date de rupture de stock"
+			"capstitle": "Mes capsules de café - Application Android",
+			"capsintro": "Cette application vous permet de gérer votre stock de capsules de café",
+			"caps1": "Gestion du stock de capsules",
+			"caps2": "Ajouter ou supprimer des types de capsules personnalisés",
+			"caps3": "Vous prévient de la date de rupture de stock"
+		},
+		"commit": {
+			"commit": "Commitstrip - L'application des codeurs",
+			"committitle": "Commitstrip - Application Android non-officielle",
+			"commitintro": "Commitstrip - Application Android non-officielle",
+			"commit1": "Lisez les dernières BD",
+			"commit2": "Sauvegardez vos favoris",
+			"commit3": "Recevez des notifications lors des nouvelles sorties",
+			"notrelated": "Important : Cette application non-officielle est faite par des fans pour des fans et n'est pas liée à commitstrip.com"
 		}
 	}
 }

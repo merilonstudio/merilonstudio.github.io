@@ -7,4 +7,5 @@
 3. [Joueur du Grenier](https://merilonstudio.github.io/joueurdugrenier.html)
 4. [Blue Light Filter](https://merilonstudio.github.io/bluelightfilter.html)
 5. [My Coffee Capsules Inventory](https://merilonstudio.github.io/mycoffeecapsules.html)
+6. [Commitstrip](https://merilonstudio.github.io/commitstrip.html)
 6. [All our apps on our Android Play Store developer page](https://play.google.com/store/apps/dev?id=5564318794958031946)

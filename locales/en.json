@@ -10,12 +10,13 @@
 		"githubpage": "Our Github page",
 		"twitterpage": "Our Twitter page",
 		"worksoffline": "Works offline",
+		"worksonline": "Requires an Internet connection",
 		"personaldata": "No personal data collected",
 		"verrequired": "Android 4.1+ required",
 		"playbadge": "img/en_badge_web_generic.png",
 		"tool": "Tools",
-		"entertainment" : "Entertainment",
-		"productivity" : "Productivity",
+		"entertainment": "Entertainment",
+		"productivity": "Productivity",
 		"sorting": {
 			"sortinghat": "The Sorting Hat",
 			"sortingtitle": "The Sorting Hat Quiz - Android app",
@@ -47,11 +48,20 @@
 		},
 		"caps": {
 			"caps": "My Coffee Capsules Inventory",
-			"filtertitle": "My Coffee Capsules Inventory - Android app",
-			"filterintro": "This app helps you to manage your coffee capsules inventory",
-			"filter1": "Manage your capsules inventory",
-			"filter2": "Add and remove custom type capsules",
-			"filter3": "Warns you when you are about to be out of stock"
+			"capstitle": "My Coffee Capsules Inventory - Android app",
+			"capsintro": "This app helps you to manage your coffee capsules inventory",
+			"caps1": "Manage your capsules inventory",
+			"caps2": "Add and remove custom type capsules",
+			"caps3": "Warns you when you are about to be out of stock"
+		},
+		"commit": {
+			"commit": "Commitstrip - The coders app",
+			"committitle": "Commitstrip - Unofficial Android Application",
+			"commitintro": "Commitstrip - Unofficial Android Reader",
+			"commit1": "Read all the strips",
+			"commit2": "Save your favorites",
+			"commit3": "Get notified on new releases",
+			"notrelated": "Important : This unofficial fan-app is made by fans for fans and is not related to commitstrip.com"
 		}
 	}
 }
