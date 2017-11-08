@@ -62,6 +62,14 @@
 			"commit2": "Sauvegardez vos favoris",
 			"commit3": "Recevez des notifications lors des nouvelles sorties",
 			"notrelated": "Important : Cette application non-officielle est faite par des fans pour des fans et n'est pas liée à commitstrip.com"
+		},
+		"bdp": {
+			"bdp": "Bureaux de La Poste",
+			"bdptitle": "Bureaux de La Poste - Localisation, services et accessibilité",
+			"bdpintro": "Bureaux de La Poste - Localisation, services et accessibilité",
+			"bdp1": "Recherchez les bureaux de poste par commune ou à proximité",
+			"bdp2": "Triez suivant les services présents ou critères d'accessibilité",
+			"bdp3": "Trouvez les horaires de votre bureau de poste, heure limite de dépôt du courrier et bien d'autres informations"
 		}
 	}
 }

@@ -8,4 +8,5 @@
 4. [Blue Light Filter](https://merilonstudio.github.io/bluelightfilter.html)
 5. [My Coffee Capsules Inventory](https://merilonstudio.github.io/mycoffeecapsules.html)
 6. [Commitstrip](https://merilonstudio.github.io/commitstrip.html)
-6. [All our apps on our Android Play Store developer page](https://play.google.com/store/apps/dev?id=5564318794958031946)
+7. [Bureaux de La Poste](https://merilonstudio.github.io/bureauxdelaposte.html)
+8. [All our apps on our Android Play Store developer page](https://play.google.com/store/apps/dev?id=5564318794958031946)

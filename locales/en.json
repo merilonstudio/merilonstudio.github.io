@@ -62,6 +62,14 @@
 			"commit2": "Save your favorites",
 			"commit3": "Get notified on new releases",
 			"notrelated": "Important : This unofficial fan-app is made by fans for fans and is not related to commitstrip.com"
-		}
+		},
+        "bdp": {
+            "bdp": "French Post Offices",
+            "bdptitle": "French Post Offices - Location, services and accessibility",
+            "bdpintro": "French Post Offices - Location, services and accessibility",
+            "bdp1": "Search fernch post offices by keyword or GPS",
+            "bdp2": "Filter among services available",
+            "bdp3": "Render many informations like, shedule, time to deliver your mail etc."
+        }
 	}
 }
