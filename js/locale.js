@@ -21,62 +21,97 @@ if (userLang === "fr") {
 }
 
 $(function() {
-    if (file !== "") {
 
-        $.getJSON(file, function(data) {
-            var locData = data.values;
-            if (locData !== null) {
-                $(document).find(".locale-select a[data-locale='" + userLang + "']").prepend('<i class="fa fa-check" aria-hidden="true"></i>');
+    var cnt = 0;
+    var size = $("[w3-include-html]").length;
+    $("[w3-include-html]").each(function(index) {
+        cnt++;
 
-                $("[data-locale-text]").each(function(index) {
-                    var key = $(this).attr("data-locale-text").trim().toLowerCase();
-                    var res = getProperty(locData, key);
+        if (cnt < size) {
+            $(this).load($(this).attr("w3-include-html"));
+        } else {
+            $(this).load($(this).attr("w3-include-html"), function() {
+                loadData();
+            });
+        }
 
-                    if (res !== "") {
-                        $(this).html(res);
-                    }
-                });
+        $(this).removeAttr("w3-include-html");
+    });
 
-                $("[data-locale-title]").each(function(index) {
-                    var key = $(this).attr("data-locale-title").trim().toLowerCase();
-                    var res = getProperty(locData, key);
-                    if (res !== "") {
-                        $(this).attr("title", res);
-                    }
-                });
+    function loadData() {
+        if (file !== "") {
 
-                $("[data-locale-bgimg]").each(function(index) {
-                    var key = $(this).attr("data-locale-bgimg").trim().toLowerCase();
-                    var res = getProperty(locData, key);
-                    if (res !== "") {
-                        $(this).css("background-image", "url(" + res + ")");
-                    }
-                });
-            }
-        });
+            $.getJSON(file, function(data) {
+                var locData = data.values;
+                if (locData !== null) {
+                    $(document).find(".locale-select a[data-locale='" + userLang + "']").prepend('<i class="fa fa-check" aria-hidden="true"></i>');
 
-        $("body").on("click", "#setEn, #setFr", function(e) {
-            e.preventDefault();
+                    $("[data-locale-text]").each(function(index) {
+                        var key = $(this).attr("data-locale-text").trim().toLowerCase();
+                        var res = getProperty(locData, key);
 
-            var newLocale = $(this).attr("data-locale").trim().toLowerCase();
+                        if (res !== "") {
+                            $(this).html(res);
+                        }
+                    });
 
-            if (newLocale === "fr" || newLocale === "en") {
+                    $("[data-locale-title]").each(function(index) {
+                        var key = $(this).attr("data-locale-title").trim().toLowerCase();
+                        var res = getProperty(locData, key);
+                        if (res !== "") {
+                            $(this).attr("title", res);
+                        }
+                    });
 
-                if (typeof (Storage) !== "undefined") {
+                    $("[data-locale-bgimg]").each(function(index) {
+                        var key = $(this).attr("data-locale-bgimg").trim().toLowerCase();
+                        var res = getProperty(locData, key);
+                        if (res !== "") {
+                            $(this).css("background-image", "url(" + res + ")");
+                        }
+                    });
+                }
+            });
 
-                    var currentLocale = localStorage.getItem("currentLocale");
+            $("body").on("click", "#setEn, #setFr", function(e) {
+                e.preventDefault();
 
-                    if (currentLocale !== newLocale) {
-                        localStorage.setItem("currentLocale", newLocale);
-                        localStorage.setItem("currentLocaleDate", Date.now());
-                        setTimeout(function() {
-                            window.location.reload(true);
-                        });
+                var newLocale = $(this).attr("data-locale").trim().toLowerCase();
+
+                if (newLocale === "fr" || newLocale === "en") {
+
+                    if (typeof (Storage) !== "undefined") {
+
+                        var currentLocale = localStorage.getItem("currentLocale");
+
+                        if (currentLocale !== newLocale) {
+                            localStorage.setItem("currentLocale", newLocale);
+                            localStorage.setItem("currentLocaleDate", Date.now());
+                            setTimeout(function() {
+                                window.location.reload(true);
+                            });
+                        }
                     }
                 }
-            }
 
-        });
+            });
+            
+            var coded = "pSzOTpO@lPCo7SzcOGBoS.pSl";
+            var key = "XW8kCd0Opna7SAxUYjH6sELmieuFNbB3JyzTvfVgQrKqtc91loPGI5R42hMZwD";
+            var shift = coded.length;
+            var link = "";
+            for (i = 0; i < coded.length; i++) {
+                if (key.indexOf(coded.charAt(i)) == -1) {
+                    ltr = coded.charAt(i);
+                    link += (ltr);
+                } else {
+                    ltr = (key.indexOf(coded.charAt(i)) - shift + key.length) % key.length;
+                    link += (key.charAt(ltr));
+                }
+            }
+            $("#author").text($("#author").text() + " - " + (new Date()).getFullYear());
+            $("#contact").html("<a href='mailto:" + link + "'><i class='fa fa-envelope' aria-hidden='true'></i> <span data-locale-text='contactus'>Contact us</span></a>");
+        }
     }
 
 });
