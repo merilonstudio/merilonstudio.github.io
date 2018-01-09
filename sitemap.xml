@@ -2,50 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
     <url>
-        <loc>https://merilonstudio.github.io/</loc>
+        <loc>https://merilonstudio.com/</loc>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://merilonstudio.github.io/index.html</loc>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://merilonstudio.github.io/sorting-hat.html</loc>
+        <loc>https://merilonstudio.com/sorting-hat.html</loc>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>
-            https://merilonstudio.github.io/simple-compass.html
+            https://merilonstudio.com/simple-compass.html
         </loc>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>
-            https://merilonstudio.github.io/joueurdugrenier.html
+            https://merilonstudio.com/joueurdugrenier.html
         </loc>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>
-            https://merilonstudio.github.io/bluelightfilter.html
+            https://merilonstudio.com/bluelightfilter.html
         </loc>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>
-            https://merilonstudio.github.io/mycoffeecapsules.html
+            https://merilonstudio.com/mycoffeecapsules.html
         </loc>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>
-            https://merilonstudio.github.io/commitstrip.html
+            https://merilonstudio.com/commitstrip.html
         </loc>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>
-            https://merilonstudio.github.io/bureauxdelaposte.html
+            https://merilonstudio.com/bureauxdelaposte.html
         </loc>
         <priority>0.80</priority>
     </url>
