@@ -39,7 +39,7 @@
 			"jdg1": "Récupère en temps réel toutes les vidéos Youtube",
 			"jdg2": "Chaînes JDG et Bazar du Grenier",
 			"jdg3": "Flux Twitter",
-			"jdg4": "Flux rss <a href='joueurdugrenier.fr' target='_blank'>joueurdugrenier.fr</a>"
+			"jdg4": "Flux rss <a href='http://www.joueurdugrenier.fr' target='_blank'>joueurdugrenier.fr</a>"
 		},
 		"filter": {
 			"filter": "Filtre de lumière bleue",
