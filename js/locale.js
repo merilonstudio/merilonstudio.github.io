@@ -109,7 +109,7 @@ $(function() {
                     link += (key.charAt(ltr));
                 }
             }
-            $("#author").text($("#author").text() + " - " + (new Date()).getFullYear());
+            $("#author").text($("#author").text() + (new Date()).getFullYear());
             $("#contact").html("<a href='mailto:" + link + "'><i class='fa fa-envelope' aria-hidden='true'></i> <span data-locale-text='contactus'>Contact us</span></a>");
         }
     }
